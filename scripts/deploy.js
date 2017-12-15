@@ -6,7 +6,7 @@ const args = process.argv.slice(2)
 
 const run = ({ args }) => {
   _("[INFO] Build")
-  _(cpr.execSync(`babel src --out-dir=dist/src`).toString())
+  _(cpr.execSync(`babel src --out-dir=dist`).toString())
 
   _("[INFO] Zip")
   _(cpr.execSync(`7z a zalo-hook.zip dist index.js package.json`).toString())

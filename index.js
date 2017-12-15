@@ -1,2 +1,2 @@
 const { zaloHook } = require("./dist/index")
-exports.askQuestion = zaloHook
+exports.zaloHook = zaloHook
