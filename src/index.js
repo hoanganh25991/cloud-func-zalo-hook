@@ -13,7 +13,7 @@ export const zaloHook = async (req, res) => {
   const { fromuid, oaid, message, order, event: eventName } = eventInfo
   const shouldHandle = message || order
   if (!shouldHandle) {
-    res.status(200).send({ msg: "Obmit" })
+    res.send({ msg: "Obmit" })
     return
   }
 
@@ -31,7 +31,13 @@ export const zaloHook = async (req, res) => {
     }
   }
 
-  await call({ query, context, zaloEvent: eventInfo })
+  try {
+    await call({ query, context, zaloEvent: eventInfo })
+  } catch (err) {
+    _("[call ERR]", err)
+    res.send({ msg: "Send event fail" })
+    return
+  }
 
-  res.status(200).send({ msg: "Event sent" })
+  res.send({ msg: "Event sent" })
 }
