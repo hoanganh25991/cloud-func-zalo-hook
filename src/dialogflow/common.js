@@ -6,7 +6,7 @@ const { DIALOGFLOW_TOKEN: token } = process.env
 const _ = console.log
 
 export const tinyAxios = axios.create({
-  timeout: 5000,
+  timeout: 6000,
   headers: {
     Authorization: `Bearer ${token}`,
     "Content-Type": "application/json"

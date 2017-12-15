@@ -1,11 +1,5 @@
 {
   "query":"Shop oi, ao thu nay giao bao nhieu vay",
-  "context": {
-      "name":"generic",
-      "parameters":{
-        "facebook_sender_id":"xxxFB_IDxxx"
-      }
-  },
   "zaloEvent":{
     "fromuid": "4024584047813887864",
     "phone": "",

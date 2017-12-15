@@ -1,0 +1,36 @@
+{
+  "query": "orderEvent$",
+  "context": {
+    "name":"generic",
+    "parameters":{
+      "facebook_sender_id":"xxxFB_IDxxx"
+    }
+  },
+  "zaloEvent": {
+    "fromuid": "8771322530203347483",
+    "appid": "",
+    "event": "order",
+    "oaid": "2314288753502995654",
+    "mac": "a12c6f9b8893f84e14e642c46e36353a38bcdb84f7500f4944dede0ca63f3df9",
+    "timestamp": "1513314816087",
+    "order": {
+      "updatedTime": 1513314816068,
+      "productId": "21fb97ceb18b58d5019a",
+      "deliverAddress": "A13 chung cu bo cong an",
+      "userId": 8771322530203347483,
+      "customerName": "Ma No",
+      "numItem": 1,
+      "productName": "Gà cay phô mai",
+      "customerPhone": 841287590963,
+      "productImage": "https://store-photo-s500.zdn.vn/c49918ec8bab62f53bba.jpg?version=1",
+      "price": 49000,
+      "deliverCity": "Hồ Chí Minh",
+      "paymentMethod": 1,
+      "createdTime": 1513096332057,
+      "orderCode": "#8ed2f",
+      "id": "d5837e844ac1a39ffad0",
+      "oaId": 2314288753502995654,
+      "status": 3
+    }
+  }
+}

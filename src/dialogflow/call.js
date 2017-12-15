@@ -6,13 +6,14 @@ const _ = console.log
 export const ENDPOINT = "https://api.dialogflow.com/v1/query?v=20170712"
 
 export const call = async ({ query, context, zaloEvent }) => {
+  const contexts = context ? [context] : null
   const postData = {
     query,
+    contexts,
     lang: "en",
     sessionId: uuidv1(),
     timezone: "Asia/Bangkok",
-    originalRequest: { zaloEvent },
-    contexts: [context]
+    originalRequest: { zaloEvent }
   }
 
   _("[posData]", postData)
