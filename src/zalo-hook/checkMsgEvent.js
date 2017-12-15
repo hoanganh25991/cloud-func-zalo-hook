@@ -11,7 +11,7 @@
 //   timestamp: '1513307209621'
 // }
 export const checkMsgEvent = eventInfo => {
-  const { fromuid, oaid, message, msgid, event: type } = eventInfo
-  const isMsgEvent = fromuid && oaid && message && msgid && type
+  const { fromuid, oaid, message, event: eventName } = eventInfo
+  const isMsgEvent = fromuid && oaid && message && eventName
   return isMsgEvent
 }
