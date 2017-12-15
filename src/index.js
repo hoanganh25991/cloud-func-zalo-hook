@@ -18,8 +18,8 @@ export const zaloHook = (req, res) => {
   const query = order ? ORDER_EVENT : message
 
   const context = {
-    name: "generic",
-    paramaters: {
+    name: "zalo-event",
+    parameters: {
       fromuid,
       oaid,
       message,
