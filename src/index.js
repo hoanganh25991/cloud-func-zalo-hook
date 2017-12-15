@@ -29,6 +29,8 @@ export const zaloHook = (req, res) => {
     }
   }
 
-  call({ query, context, zaloEvent: eventInfo })
   _("[call] Sent to dialogflow")
+  call({ query, context, zaloEvent: eventInfo })
+  // return call({ query, context, zaloEvent: eventInfo })
+  return null
 }
